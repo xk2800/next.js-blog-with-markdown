@@ -21,7 +21,7 @@ export default function Home({ posts }) {
             <div className="posts">
                 {posts.map((post, index) => (
                     // <h3>{post.frontmatter.title}</h3>
-                    <Post post={post} />
+                    <Post key={index} post={post} />
                 ))}
             </div>
         </div>
